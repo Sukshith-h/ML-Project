@@ -2,11 +2,11 @@ import sys
 import os
 import numpy as np
 import pandas as pd
-from dataclasses import dataclass
+from dataclasses import dataclass   
 
-from sklearn.compose import ColumnTransformer
-from sklearn.impute import SimpleImputer
-from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer  
+from sklearn.impute import SimpleImputer      # fill the missing values in the dataset by replacing it with mean,meadian,etc
+from sklearn.pipeline import Pipeline         # chain together multiple data transformation into one process/pipeline.
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
 
 from src.exception import CustomException
